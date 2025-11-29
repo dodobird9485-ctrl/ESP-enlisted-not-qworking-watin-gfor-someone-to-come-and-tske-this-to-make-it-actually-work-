@@ -1,0 +1,50 @@
+Enlisted ESP Overlay - Build Instructions
+==========================================
+
+Requirements:
+- Visual Studio 2022 (Community, Professional, or Enterprise)
+- Windows 10 or 11
+
+Build Steps:
+
+1. Open Visual Studio
+2. Go to File > Open > Project/Solution
+3. Select: d:\Research\EnlistedESPOverlay.vcxproj
+4. Right-click EnlistedESPOverlay.vcxproj in Solution Explorer
+5. Select "Build"
+   OR
+   Press Ctrl+Shift+B
+
+Output will be: d:\Research\x64\Release\EnlistedESPOverlay.exe
+
+If you see build errors about missing headers:
+- Make sure Windows SDK is installed in Visual Studio
+- Go to Tools > Get Tools and Features
+- Add "Windows 10/11 SDK" component
+
+Running:
+- Start Enlisted Client first
+- Run EnlistedESPOverlay.exe
+- An overlay window should appear on top
+- Press ESC to close
+
+Current Features:
+- Direct2D rendering (boxes, lines, text)
+- Ally/Enemy color coding (green/red)
+- Health bars with color gradient
+- Player distance display
+- Memory pattern scanning for player data
+- Frame-based caching for performance
+
+Notes:
+- If no visual output appears, ensure DirectX 11 is working
+- Check debug.log for error messages:
+  d:\Research\run_debug.bat
+
+Source Files:
+- include/esp_renderer.h
+- include/memory_reader.h
+- include/game_capture.h
+- src/esp_renderer.cpp (Direct2D implementation)
+- src/memory_reader.cpp (Enlisted process memory reading)
+- src/main.cpp (Application entry point)

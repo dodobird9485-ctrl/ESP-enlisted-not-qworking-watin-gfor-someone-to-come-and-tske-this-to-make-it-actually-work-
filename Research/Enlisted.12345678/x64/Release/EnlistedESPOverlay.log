@@ -1,0 +1,8 @@
+﻿  main.cpp
+  game_capture.cpp
+  esp_renderer.cpp
+  memory_reader.cpp
+  Generating Code...
+main.obj : error LNK2019: unresolved external symbol D3D11CreateDeviceAndSwapChain referenced in function "bool __cdecl InitializeDirectX(struct HWND__ *)" (?InitializeDirectX@@YA_NPEAUHWND__@@@Z)
+MSVCRT.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ)
+D:\Research\x64\Release\EnlistedESPOverlay.exe : fatal error LNK1120: 2 unresolved externals
